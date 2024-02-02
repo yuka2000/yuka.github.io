@@ -8,136 +8,517 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="pro.css">
+        <link rel="stylesheet" href="HS.css">
     <title>Host familiy</title>
 </head>
 <style>
+/* AboutUs Section */
+.AboutUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
 
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
+.box-container-1 {
+    max-width: 800px; /* Adjust as needed for a slightly smaller container */
+    margin: 0 auto; /* Center the container */
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    max-width: 70%;
+    height: auto;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Set the text color */
+    font-size: 1.5em; /* Adjust the font size */
+}
+
+.box-container-1 {
+    max-width: 80%; /* Adjust as needed */
+box-shadow: #333;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Set the text color */
+    font-size: 1.5em; /* Adjust the font size */
+}
+
+.AboutUs h1,
+.AboutUs p {
+    color: #333;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.text-overlay p {
+    color: #ffffff;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .AboutUs .box-container-1 {
+        max-width: 90%;
+        margin: 5% auto;
     }
-    
-    .container h1 {
-        text-align: center;
-        color: #bcbcbc;
+
+    .AboutUs img {
+        border-radius: 10px 10px 0 0;
     }
-    
-    form {
-        display: flex;
-        flex-direction: column;
-        background-color: rgba(255, 255, 255, 0.8);
-        padding: 20px;
-        border-radius: 10px;
-        margin: 20px auto;
-        max-width: 400px;
-    }
-    
-    label {
-        margin-top: 10px;
-        color: #555;
-    }
-    
-    input, textarea {
+
+    .AboutUs .box-text-1 {
         padding: 10px;
+    }
+
+    .AboutUs h1 {
+        font-size: 1.5em;
         margin-top: 5px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        border-color: rgb(0, 0, 129);
+        
+    }
+
+    .AboutUs p{
+        margin-left: 20px;
+    }
+}
+
+/* Requirements Section */
+.Requirements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Requirements .box-container {
+    position: relative;
+    max-width: 100%;
+    margin: 10px auto;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Requirements img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+}
+
+.Requirements .box-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(0, 0);
+    text-align: left;
+    color: #fff;
+    z-index: 1;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Requirements h2 {
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.box-2 {
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Adjust the direction for responsiveness */
+    align-items: center;
+    background-color: #ffffff;
+    max-width: 95%;
+    margin: auto;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+    margin-bottom: 20px; /* Add margin at the bottom for better spacing */
+    height: auto;
+    max-width: 100%; /* Ensure the image is responsive */
+}
+
+.text-2 h1 {
+    color: #217dbb;
+    margin-bottom: 10px;
+    text-align: center; /* Center the text for responsiveness */
+}
+
+.text-2 p {
+    color: #333;
+    text-align: center; /* Center the text for responsiveness */
+}
+
+@media screen and (min-width: 768px) {
+    .Requirements {
+        flex-direction: row;
+    }
+
+    .Requirements .box-container {
+        max-width: 48%;
+    }
+}
+
+/* Container Section */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    color: #555;
+}
+
+input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #217dbb;
+}
+
+.SubmissionForm h1{
+color: rgb(0, 0, 0);
+}
+
+.SubmissionForm p{
+    color: #333;
+    font-size: 60px;
+
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+div p{
+    color: #333;
+    .spacer {
+        margin-bottom: 20px; /* Adjust the margin-bottom as needed */
     }
     
-    button {
-        background-color: #3498db;
-        color: #fff;
-        padding: 10px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-top: 15px;
+}
+/* SubmissionForm Section */
+.SubmissionForm h1 {
+    color: rgb(0, 0, 0);
+}
+
+.SubmissionForm p {
+    color: #333;
+    font-size: 60px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Spacer Section */
+.spacer {
+    margin-bottom: 20px;
+    margin-top: 30px;
+    text-shadow: #333;
+}
+
+.spacer h1,
+.spacer h3 {
+    color: #333;
+}
+
+.spacer p,
+.additional-text p {
+    font-family: monospace;
+    font-weight: bold;
+}
+
+/* Box-2 Section */
+.box-2 {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    max-width: 95%;
+    margin: auto;
+    height: 200px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+    margin-right: 20px;
+    height: 200px;
+    width: 250px;
+}
+
+.text-2 h1 {
+    color: #217dbb;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.text-2 p {
+    color: #333;
+    text-align: left;
+    
+}
+
+/* Text-box-5 Section */
+.text-box-5 {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    color: #3498db;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Box-Container Section */
+.box-container {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+}
+
+/* General Styles */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (min-width: 600px) {
+    .box-2 {
+        flex-direction: row; /* Switch back to row layout for larger screens */
+        height: auto;
     }
-    
-    button:hover {
-        background-color: #217dbb;
+
+    .image {
+        margin-bottom: 0; /* Reset margin for larger screens */
+        margin-right: 20px; /* Add margin to the right for spacing between image and text */
+        height: 200px;
+        max-width: none; /* Reset max-width for larger screens */
     }
-    
-    .SubmissionForm h1 {
-        color: rgb(0, 0, 0);
-    }
-    
-    .SubmissionForm p {
-        color: #333;
-        font-size: 60px;
-    }
-    
-    .text-content form {
-        font-size: 14px;
-    }
-    
-    .text-content label,
-    .text-content textarea,
-    .text-content input {
-        margin-bottom: 10px;
-    }
-    
-    /* Responsive Media Queries */
-    @media only screen and (max-width: 600px) {
-        form {
-            max-width: 100%; /* Adjust for smaller screens */
-        }
-    
-        button {
-            width: 100%; /* Make the button full-width on smaller screens */
-        }
-    }
-    
-    
-    </style>
-    
+}
+
+
+</style>
+
 <body>
-<header>
-    <nav>
-        
-        <div class="nav-links" id="navLinks">
-            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="process.html">CONTACT</a></li>
-              </ul>
-        </div>
-        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
-    </nav>
+    <!------------------HEADER---------------------->
+    <header>
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="HS.html">HOME</a></li>
+                    <li><a href="process.html">CONTACT</a></li>
+                  </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
 
-
-    <div class="text-box">
-        <div class="text-content">
-            <section class="contact">
-            <div class="container">   
-                <h1>contact form</h1> 
-                <form action="https://api.staticforms.xyz/submit" method="POST">
-                    <input type="hidden" name="accessKey" value="b1fc57c8-7758-48ee-be63-d8a96f336619"> <!-- Required -->
-                    <label for="name">Name:</label>
-                    <input type="text" id="text" name="text" required>
-        
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+        <div class="text-box-1">
+            <h1>HOST FAMILIES WANTED!!</h1>
             
-                    <label for="email">Phone number:</label>
-                    <input type="phone" id="phone" name="phone" required>
+
         
-                    <label for="message">Question:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-        
-                    <button type="submit">Contact us</button>
-                </form>
+    </header>
+    
+<footer>
+    <!-- About Us Section -->
+    <section class="AboutUs">
+        <div class="box-container-1">
+            <div class="image-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/df/Family_Portrait.jpg" alt="About Us Image">
+                <div class="text-overlay">
+            
+                    <p>Help shape the future of Japanese exchange students and create memorable experiences.</p>
                 </div>
-          </div>
+            </div>
+        
+            <div class="content-container"></div>
+              <h1>Improvement in Language Skills</h1>
+              <p>Talking daily with the host family improves language skills, especially in English. Real-life use helps students express themselves accurately and naturally.</p>
+                <h1>Understanding of Culture</h1>
+                <p>Living with a host family teaches students about local culture beyond textbooks. Practical experiences enrich their learning.</p>
+                <h1>Local Support</h1>
+                <p>Host families, as locals, support students adjusting to a new environment. They provide advice and help when needed.</p>
+                <h1>Cultural Exchange</h1>
+                <p>Interaction with host families facilitates cultural exchange. Sharing home country customs and learning local lifestyles creates meaningful experiences.</p>
+                <h1>Emotional Support</h1>
+                <p>Host families act as a supportive "family," easing feelings of isolation. A comfortable environment is vital for student confidence and growth.</p>
+                <h1>Cross-Cultural Understanding</h1>
+                <p>Through the host family, students develop skills in understanding and accepting different backgrounds and values. This fosters cross-cultural understanding, contributing to a broader international perspective.</p>
+            
+            </div>
+        </div>
+    </div>
+    </section>
+ 
+   
+    <!-- Home Stay Requirements Section -->
+    <section class="Requirements">
+        <div class="box-container">
+            <img src="image/cowancourtbedroom_d8375ca1-3f4d-49d8-bb28-069ecfc69ef3.jpg" alt="Accommodations Image">
+            <div class="box-text">
+                <h2><b>*Accommodations</b></h2>
+                <p>A comfortable private bedroom with a bed (including bedding), a door, window, desk, closet, chair and desk lamp</p>
+            </div>
+        </div>
+
+    
+        <!-- Meals Section -->
+        <div class="box-container">
+            <img src="image/dinner-tea-yougov.avif" alt="Meals Image">
+            <div class="box-text">
+                <h2><b>*Meals</b></h2>
+                <p>3 nutritious meals a day and healthy snacks. Breakfast can be self-service</p>
+            </div>
+        </div>
+    
+        <!-- Language Section -->
+        <div class="box-container">
+            <img src="image/istockphoto-1047570732-612x612.jpg" alt="Language Image">
+            <div class="box-text">
+                <h2>*Language</h2>
+                <p>An English-only environment at home. Please aware that only Japanese in the house</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    </section>
+    <div class="box-2">
+        <img src="image/istockphoto-1218588306-612x612.jpg" alt="写真" class="image">
+        <div class="text-2">
+            <h1>STEP1: Apply Host family</h1>
+          <p>Continue down to the botton and you will find the application form.</p>
+        </div>
       </div>
 
+      <div class="box-2">
+        <img src="image/istockphoto-1424406254-612x612.jpg" alt="写真" class="image">
+        <div class="text-2">
+            <h1>STEP2: Recieve email</h1>
+          <p>After submitting your application, you will receive ad email from Access Canada.
+            Please reply to the email according to the information in the email.
+          </p>
+        </div>
       </div>
-      
-</header>
+
+      <div class="box-2">
+        <img src="image/istockphoto-1319763366-612x612.jpg" alt="写真" class="image">
+        <div class="text-2">
+            <h1>STEP3: Home visit</h1>
+          <p>We will visit the home and look at the entire house, including the living room, dining room, private room, bath room and landry.</p>
+        </div>
+      </div>
 
 
-<script src="HS.js"></script>
+        <div class="spacer">
+        <h1>Become Host family! Apply from here</h1>
+    </div>  
+    <section class="SubmissionForm">
+    <div class="container">   
+        <form action="https://api.staticforms.xyz/submit" method="POST">
+            <input type="hidden" name="accessKey" value="b1fc57c8-7758-48ee-be63-d8a96f336619"> <!-- Required -->
+              <label for="name">First Name:</label>
+              <input type="text" name="name"> <!-- Optional -->
+              
+              <label for="name">Last Name:</label>
+              <input type="text" name="name">
+         
+        <label for="name">Email:</label>
+        <input type="text" name="email"> <!-- Optional -->
+       
+        <label for="name">Phone:</label>
+        <input type="text" name="phone"> <!-- Optional -->
+        
+        <label for="name">Address:(include postalcode and city)</label>
+        <textarea name="message"></textarea>
+
+              <button type="submit">Apply</button>
+        
+              </form>
+              </div>
+
+              
+    </section>
+    <div class="spacer">
+        <h3>If you have any questions, click below</h3>
+    </div>
+    <div class="container">
+        <a href="process.html">Go to Contact Form</a>
+    </div>
+   
+    
+    </footer>
+
+    <!-- Include your scripts here -->
+
+                
+    <script src="HS.js"></script>
 </body>
+
+</html>
