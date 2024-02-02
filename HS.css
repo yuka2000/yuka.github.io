@@ -1,0 +1,590 @@
+:root {
+    --primaryColor: #2a3b8c; /* Dark Blue - Technology */
+    --secondaryColor: #ff6f00; /* Bright Orange - Energy */
+    --onPrimaryColor: #e1eaf6; /* Light Blue - Clarity */
+    --onSecondaryColor: #ffbc42; /* Soft Orange - Fun */
+    --black: #000;
+    --white: #fff;
+    --gray: #f0f0f0;
+    --red: #e74c3c; /* Red - Highlight */
+  }
+  
+  /* Resetting margin, padding, and font for all elements */
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "Comic Neue", sans-serif; /* We set a font style for the entire document */
+  }
+  
+  /* Applying overflow property to HTML and body */
+  html,
+  body {
+    overflow-x: hidden; /* Prevents horizontal scrolling in the document */
+    
+}
+
+  
+  /*-----------HEADER NAVBAR MENU-----------*/
+  /* Styling for the header section */
+  header {
+    font-family: "Montserrat", sans-serif;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('image/istockphoto-1434916224-612x612.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+
+  
+  
+  /* Styling for the navigation bar */
+  nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Styling for the navigation bar logo */
+  nav img {
+    width: 50px;
+  }
+  
+  /* Styling for the navigation links container */
+  .nav-links {
+    flex: 1;
+    text-align: right;
+  }
+  
+  /* Styling for each navigation link item */
+  .nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+  
+  /* Styling for the navigation link text */
+  .nav-links ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 13px;
+  }
+  
+  /* Styling for the line that appears under a navigation link on hover */
+  .nav-links ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: var(--onPrimaryColor);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  
+  /* Styling for the line that expands on hover */
+  .nav-links ul li:hover::after {
+    width: 100%;
+  }
+  
+  /* Keyframes animation for text movement */
+  @keyframes textMovement {
+    0% {
+      opacity: 0;
+      scale: 0.1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Styling for the text box in the header */
+  .text-box-1 {
+    width: 90%;
+    color: var(--white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    animation: textMovement 2s forwards;
+  }
+  
+  /* Styling for the header text */
+  .text-box-1 h1 {
+    font-size: 65px;
+  }
+  
+  .text-box-1 p{
+    color: #000000;
+  }
+
+
+  
+
+  
+  
+  /* Styling for the hero button */
+  .hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--black);
+    border: 1px solid var(--black);
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  /* Styling for the hero button on hover */
+  .hero-btn:hover {
+    border: 1px solid var(--onPrimaryColor);
+    background: var(--onPrimaryColor);
+    transition: 1s;
+  }
+  
+  /* Styling for the menu icon in the navigation bar on smaller screens */
+  nav .fa-solid {
+    display: none;
+  }
+
+
+  .box-container {
+    position: relative;
+    max-width: 500px; /* Adjust the max-width as needed */
+    margin: 30px auto;
+    overflow: hidden;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.box-container img {
+  width: 150%; /* Adjust the width as needed */
+  height: 200px; /* Adjust the height as needed */
+  object-fit: cover;
+  display: block;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Text overlay styling */
+.box-text {
+  position: absolute;
+  bottom: 0; /* Position at the bottom */
+  left: 0; /* Position at the left */
+  transform: translate(0, 0); /* Reset the transform */
+  text-align: left; /* Align text to the left */
+  color: #fff;
+  z-index: 1;
+  width: 150%; /* Adjust the width to match the image */
+  padding: 10px; /* Adjust the padding as needed */
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the transparency (0.5 is 50%) */
+}
+
+.box-container p {
+  color: #e1eaf6;
+}
+
+/* Section heading styling */
+h2 {
+  margin-bottom: 5px; /* Adjust the margin as needed */
+  font-size: 18px; /* Adjust the font size as needed */
+  color: #fff;
+}
+
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background color for better readability */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow for depth */
+  margin-top: 50px; /* Adjust margin-top as needed */
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #ff0000;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff0000;
+}
+
+.info-message {
+  display: none;
+  color: #ff0000;
+  margin-top: 10px;
+}
+
+  /* Media query for screens with a maximum width of 700px */
+  @media (max-width: 700px) {
+    /* Adjustments for header text on smaller screens */
+    .text-box-1 h1 {
+      font-size: 20px;
+    }
+
+    .text-box-1 p{
+      color: #000000;
+    }
+
+    .box-container {
+      position: relative;
+      max-width: 500px; /* Adjust the max-width as needed */
+      margin: 30px auto;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Image styling */
+  .box-container img {
+      width: 120%; /* Adjust the width as needed */
+      height: 250px; /* Adjust the height as needed */
+      object-fit: cover;
+      display: block;
+      border-radius: 20px;
+  }
+  
+  /* Text overlay styling */
+  .box-text {
+    position: absolute;
+    bottom: 0; /* Position at the bottom */
+    left: 0; /* Position at the left */
+    transform: translate(0, 0); /* Reset the transform */
+    text-align: left; /* Align text to the left */
+    color: #fff;
+    z-index: 1;
+    width: 100%;
+    padding: 10px; /* Adjust the padding as needed */
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the transparency (0.5 is 50%) */
+}
+  /* Section heading styling */
+  h2 {
+      margin-bottom: 5px; /* Adjust the margin as needed */
+      font-size: 18px; /* Adjust the font size as needed */
+      color: #fff;
+  }
+
+  .contact-box {
+    border: 2px solid #ccc; /* Border styling */
+    padding: 20px; /* Add padding inside the box */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    background-color: #f8f8f8; /* Background color */
+    text-align: center; /* Center-align the text */
+}
+
+
+  
+/* Add this CSS to your existing stylesheet */
+
+  
+    /* Display the navigation links vertically and slide them in from the right */
+    .nav-links ul li {
+      display: block;
+    }
+    .nav-links {
+      position: absolute;
+      background-color: rgba(88, 88, 88, 0.8); 
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: -200px;
+      text-align: left;
+      z-index: 2;
+      transition: 1s;
+    }
+  
+    /* Display the menu icon and style it */
+    nav .fa-solid {
+      display: block;
+      color: var(--white);
+      margin: 10px;
+      font-size: 22px;
+      cursor: pointer;
+    }
+  
+    /* Adjustments for the navigation links container on smaller screens */
+    .nav-links ul {
+      padding: 30px;
+    }
+  }
+  
+ 
+  
+  /* Keyframes animation for rotating element */
+  @keyframes rotateAnimation {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(90deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  /* Keyframes animation for R2-D2 movement */
+  @keyframes r2d2Movement {
+    0%,
+    100% {
+      transform: translateX(0) translateY(0);
+    }
+    25% {
+      transform: translateX(20px) translateY(5px);
+    }
+    50% {
+      transform: translateX(-15px) translateY(-10px);
+    }
+    75% {
+      transform: translateX(25px) translateY(-5px);
+    }
+  }
+  
+  /* Keyframes animation for WALL-E movement */
+  @keyframes walleMovement {
+    0%,
+    100% {
+      transform: translateX(0) translateY(0);
+    }
+    20% {
+      transform: translateX(10px) translateY(-5px);
+    }
+    40% {
+      transform: translateX(-15px) translateY(10px);
+    }
+    60% {
+      transform: translateX(20px) translateY(-5px);
+    }
+    80% {
+      transform: translateX(-10px) translateY(5px);
+    }
+  }
+  
+  /* Styling for project columns on hover */
+  .proyects-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  
+  /* Styling for content that appears on hover */
+  .proyects-col:hover::before {
+    content: "TOUCH ME!";
+    position: static;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Styling for content that appears on hover when opacity changes */
+  .proyects-col:hover::before {
+    opacity: 1;
+  }
+  
+  /* Media query for screens with a maximum width of 700px */
+  @media (max-width: 700px) {
+    /* Adjustments for layout on smaller screens */
+    .row {
+      flex-direction: column;
+    }
+    .proyects-img img {
+      width: 100px;
+      height: 150px;
+    }
+  }
+ 
+  
+  @media (max-width: 700px) {
+    /* Adjustments for testimonial column images on smaller screens */
+    .testimonial-col img {
+      margin-left: 0px;
+      margin-right: 15px;
+    }
+  }
+  
+  /*-----------SERVICES-----------*/
+  
+  /* Styling for the services section */
+  .services {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+  }
+  
+  /* Styling for service columns */
+  .services-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+  }
+  
+  /* Styling for images within service columns */
+  .services-col img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Styling for paragraphs within service columns */
+  .services-col p {
+    padding: 0;
+  }
+  
+  /* Styling for heading within service columns */
+  .services-col h3 {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(39, 39, 39, 0.8); /* Add a semi-transparent background color for better readability */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Add a subtle box shadow for depth */
+    margin-top: 50px; /* Adjust margin-top as needed */
+  }
+
+  form {
+    margin-top: 20px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+  }
+
+  button {
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #ff0000;
+  }
+
+  .info-message {
+    display: none;
+    color: #ff0000;
+    margin-top: 10px;
+  
+  }
+  
+  
+  /*-----------FOOTER-----------*/
+  
+  /* Styling for the footer section */
+  footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #ffffff;
+  }
+  
+  /* Styling for heading within the footer */
+  footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+  }
+
+  
+ 
+  
+  /* Media query for screens with a maximum width of 600px */
+  @media screen and (max-width: 600px) {
+    /* Adjustments for heading within the footer on smaller screens */
+    footer h4 {
+      font-size: 1.5rem;
+    }
+  
+    /* Adjustments for icon elements within the footer on smaller screens */
+    .icons .fa-brands {
+      padding: 10px 0;
+      margin: 0 10px;
+    }
+  }
+  
+  /* Media query for screens with a minimum width of 391px */
+  @media screen and (min-width: 391px) {
+    /* Adjustments for footer on larger screens */
+    footer {
+      width: 100%;
+      height: auto; /* Change the value according to your preference */
+      color: #feffe9;
+    }
+  
+    /* Adjustments for heading within the footer on larger screens */
+    footer h4 {
+      font-size: 2rem;
+    }
+    footer h1 {
+      color: #fff;
+    }
+    
+    .contact-box {
+      border: 2px solid #ccc; /* Border styling */
+      padding: 20px; /* Add padding inside the box */
+      border-radius: 10px; /* Add border-radius for rounded corners */
+      background-color: #c2e6ff; /* Background color */
+      text-align: center; /* Center-align the text */
+
+  }
+  .contact-box p{
+    color: #000;
+  }
+  .contact-box h2{
+    color: #000;
+  }
+
+  
+  
+  }
+  
