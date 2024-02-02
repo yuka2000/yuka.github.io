@@ -16,7 +16,7 @@
     body {
         margin: 0;
         font-family: Arial, sans-serif;
-        background-color: #f4f4f4; /* ページの背景色を設定（適宜調整してください） */
+        background-color: #f4f4f4;
     }
     
     .container h1 {
@@ -27,11 +27,11 @@
     form {
         display: flex;
         flex-direction: column;
-        background-color: rgba(255, 255, 255, 0.8); /* フォームの背景色を透明に設定 */
+        background-color: rgba(255, 255, 255, 0.8);
         padding: 20px;
         border-radius: 10px;
         margin: 20px auto;
-        max-width: 400px; /* フォームの最大幅を設定（適宜調整してください） */
+        max-width: 400px;
     }
     
     label {
@@ -80,12 +80,24 @@
         margin-bottom: 10px;
     }
     
+    /* Responsive Media Queries */
+    @media only screen and (max-width: 600px) {
+        form {
+            max-width: 100%; /* Adjust for smaller screens */
+        }
+    
+        button {
+            width: 100%; /* Make the button full-width on smaller screens */
+        }
+    }
+    
+    
     </style>
     
 <body>
 <header>
     <nav>
-        <a href="process.html"><img src="img/logo.png"></a>
+        
         <div class="nav-links" id="navLinks">
             <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
             <ul>
