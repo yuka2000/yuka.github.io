@@ -12,327 +12,212 @@
     <title>Host familiy</title>
 </head>
 <style>
-/* AboutUs Section */
-.AboutUs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-}
-
-.box-container-1 {
-    max-width: 800px; /* Adjust as needed for a slightly smaller container */
-    margin: 0 auto; /* Center the container */
-}
-
-.image-container {
-    position: relative;
-}
-
-.image-container img {
-    max-width: 70%;
-    height: auto;
-}
-
-.text-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white; /* Set the text color */
-    font-size: 1.5em; /* Adjust the font size */
-}
-
-.box-container-1 {
-    max-width: 80%; /* Adjust as needed */
-box-shadow: #333;
-}
-
-.image-container {
-    position: relative;
-}
-
-.image-container img {
-    max-width: 100%;
-    height: auto;
-}
-
-.text-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white; /* Set the text color */
-    font-size: 1.5em; /* Adjust the font size */
-}
-
-.AboutUs h1,
-.AboutUs p {
-    color: #333;
-    text-align: left;
-    margin-left: 10px;
-    margin-top: 10px;
-}
-
-.text-overlay p {
-    color: #ffffff;
-    text-align: center;
-}
-
-@media screen and (max-width: 768px) {
-    .AboutUs .box-container-1 {
-        max-width: 90%;
-        margin: 5% auto;
-    }
-
-    .AboutUs img {
-        border-radius: 10px 10px 0 0;
-    }
-
-    .AboutUs .box-text-1 {
-        padding: 10px;
-    }
-
-    .AboutUs h1 {
-        font-size: 1.5em;
-        margin-top: 5px;
-        
-    }
-
-    .AboutUs p{
-        margin-left: 20px;
-    }
-}
-
-/* Requirements Section */
-.Requirements {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.Requirements .box-container {
-    position: relative;
-    max-width: 100%;
-    margin: 10px auto;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.Requirements img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: block;
-    border-radius: 20px;
-}
-
-.Requirements .box-text {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transform: translate(0, 0);
-    text-align: left;
-    color: #fff;
-    z-index: 1;
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.Requirements h2 {
-    margin-bottom: 5px;
-    font-size: 18px;
-    color: #fff;
-}
-
-.box-2 {
-    padding: 20px;
-    display: flex;
-    flex-direction: column; /* Adjust the direction for responsiveness */
-    align-items: center;
-    background-color: #ffffff;
-    max-width: 95%;
-    margin: auto;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.image {
-    margin-bottom: 20px; /* Add margin at the bottom for better spacing */
-    height: auto;
-    max-width: 100%; /* Ensure the image is responsive */
-}
-
-.text-2 h1 {
-    color: #217dbb;
-    margin-bottom: 10px;
-    text-align: center; /* Center the text for responsiveness */
-}
-
-.text-2 p {
-    color: #333;
-    text-align: center; /* Center the text for responsiveness */
-}
-
-@media screen and (min-width: 768px) {
-    .Requirements {
-        flex-direction: row;
-    }
-
-    .Requirements .box-container {
-        max-width: 48%;
-    }
-}
-
-/* Container Section */
-.container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.container h1 {
-    text-align: center;
-    color: #333;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-top: 10px;
-    color: #555;
-}
-
-input {
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-button {
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 15px;
-}
-
-button:hover {
-    background-color: #217dbb;
-}
-
-.SubmissionForm h1{
-color: rgb(0, 0, 0);
-}
-
-.SubmissionForm p{
-    color: #333;
-    font-size: 60px;
-
-}
-
-input,
-textarea {
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-div p{
-    color: #333;
-    .spacer {
-        margin-bottom: 20px; /* Adjust the margin-bottom as needed */
+    .requirement {
+        padding: 20px;
+        padding: 20px;
+        border: 2px solid #ddd; /* Add a border */
+        border-radius: 10px; /* Optional: Add rounded corners */
+        overflow: hidden;
+        margin-top: 30px;
     }
     
-}
-/* SubmissionForm Section */
-.SubmissionForm h1 {
-    color: rgb(0, 0, 0);
-}
+    .box-container-2 {
+        display: flex;
+        flex-direction: column;
+        max-width: 80%;
+        margin: auto;
+        border: #333;
+    }
 
-.SubmissionForm p {
-    color: #333;
-    font-size: 60px;
-}
+    .box-container-2 img{
+        text-align: center;
+        max-width: 100%;
+        height: auto;
+        
 
-input,
-textarea {
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
+    }
+    
+    .image-container-2 {
+        position: relative;
+        position: relative;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .text-overlay-2 {
+        position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    width: 80%; /* Adjust the font size */
+    }
 
-/* Spacer Section */
-.spacer {
-    margin-bottom: 20px;
-    margin-top: 30px;
-    text-shadow: #333;
-}
+    .requirement h1{
+        color: #333;
+        text-align: center;
+        margin-left: 10px;
+        margin-top: 10px;
+        font-size: 20px;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+    
+    .text-overlay-2 h1 {
+        margin: 0;
+    }
+    
+    .content-container-2 {
+        margin-top: 20px;
+        text-align: center;
+        border-top: 1px solid #ddd;
+    }
 
-.spacer h1,
-.spacer h3 {
-    color: #333;
-}
+    .requirement p{
+margin-top: 50px;
 
-.spacer p,
-.additional-text p {
-    font-family: monospace;
-    font-weight: bold;
-}
-
-/* Box-2 Section */
-.box-2 {
-    padding: 20px;
-    display: flex;
-    flex-direction: column; /* Set to column for all screens */
-    align-items: center;
-    background-color: #ffffff;
-    max-width: 95%;
-    margin: auto;
-    height: auto; /* Set height to auto for responsiveness */
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.image {
-    margin-bottom: 20px; /* Add margin at the bottom for better spacing */
-    height: auto;
-    max-width: 90%; /* Ensure the image is responsive */
-}
-
-.text-2 h1 {
-    color: #217dbb;
-    margin-bottom: 10px;
-    text-align: center; /* Center the text for all screens */
-    font-size: 1.5em; /* Adjust the font size */
-}
-
-.text-2 p {
-    color: #333;
-    text-align: center; /* Center the text for all screens */
-    font-size: 1em; /* Adjust the font size */
-}
-
-/* Responsive Media Queries */
-@media only screen and (min-width: 600px) {
+    }
+    
+    
+    .content-container-2 h1,
+    .content-container-2 p {
+        color: #333;
+        font-size: 1.2em;
+        margin-top: 30px;
+    }
+    
+    .AboutUs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    
+    .box-container-1 {
+        max-width: 800px; /* Adjust as needed for a slightly smaller container */
+        margin: 0 auto; /* Center the container */
+    }
+    
+    .image-container {
+        position: relative;
+    }
+    
+    .image-container img {
+        max-width: 70%;
+        height: auto;
+    }
+    
+    .text-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white; /* Set the text color */
+        font-size: 1.5em; /* Adjust the font size */
+    }
+    
+    .box-container-1 {
+        max-width: 80%; /* Adjust as needed */
+    box-shadow: #333;
+    }
+    
+    .image-container {
+        position: relative;
+    }
+    
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .AboutUs h1,
+    .AboutUs p {
+        color: #333;
+        text-align: left;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    
+    .text-overlay p {
+        color: #ffffff;
+        text-align: center;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .AboutUs .box-container-1 {
+            max-width: 90%;
+            margin: 5% auto;
+        }
+    
+        .AboutUs img {
+            border-radius: 10px 10px 0 0;
+        }
+    
+        .AboutUs .box-text-1 {
+            padding: 10px;
+        }
+    
+        .AboutUs h1 {
+            font-size: 1.5em;
+            margin-top: 5px;
+            
+        }
+    
+        .AboutUs p{
+            margin-left: 20px;
+        }
+    }
+    
+    /* Requirements Section */
+    .Requirements {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .Requirements .box-container {
+        position: relative;
+        max-width: 100%;
+        margin: 10px auto;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .Requirements img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+        border-radius: 20px;
+    }
+    
+    .Requirements .box-text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: translate(0, 0);
+        text-align: left;
+        color: #fff;
+        z-index: 1;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .Requirements h2 {
+        margin-bottom: 5px;
+        font-size: 18px;
+        color: #fff;
+    }
+    
     .box-2 {
         padding: 20px;
         display: flex;
-        flex-direction: row; /* Set to row layout for all screens */
+        flex-direction: column; /* Adjust the direction for responsiveness */
         align-items: center;
         background-color: #ffffff;
         max-width: 95%;
@@ -341,28 +226,218 @@ textarea {
     }
     
     .image {
-        margin-bottom: 0; /* Reset margin for larger screens */
-        margin-right: 20px; /* Add margin to the right for spacing between image and text */
-        height: 200px;
-        max-width: none; /* Reset max-width for larger screens */
-    }
-    
-    .text-2 {
-        text-align: left; /* Align text to the left for all screens */
+        margin-bottom: 20px; /* Add margin at the bottom for better spacing */
+        height: auto;
+        max-width: 100%; /* Ensure the image is responsive */
     }
     
     .text-2 h1 {
-        font-size: 2em; /* Adjust the font size for all screens */
-        text-align: left; /* Align heading to the left for all screens */
+        color: #217dbb;
+        margin-bottom: 10px;
+        text-align: center; /* Center the text for responsiveness */
     }
     
     .text-2 p {
-        font-size: 1.2em; /* Adjust the font size for all screens */
-        text-align: left; /* Align paragraphs to the left for all screens */
+        color: #333;
+        text-align: center; /* Center the text for responsiveness */
     }
-}
-
-
+    
+    @media screen and (min-width: 768px) {
+        .Requirements {
+            flex-direction: row;
+        }
+    
+        .Requirements .box-container {
+            max-width: 48%;
+        }
+    }
+    
+    /* Container Section */
+    .container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .container h1 {
+        text-align: center;
+        color: #333;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    label {
+        margin-top: 10px;
+        color: #555;
+    }
+    
+    input {
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    
+    button {
+        background-color: #3498db;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 15px;
+    }
+    
+    button:hover {
+        background-color: #217dbb;
+    }
+    
+    .SubmissionForm h1{
+    color: rgb(0, 0, 0);
+    }
+    
+    .SubmissionForm p{
+        color: #333;
+        font-size: 60px;
+    
+    }
+    
+    input,
+    textarea {
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    div p{
+        color: #333;
+        .spacer {
+            margin-bottom: 20px; /* Adjust the margin-bottom as needed */
+        }
+        
+    }
+    /* SubmissionForm Section */
+    .SubmissionForm h1 {
+        color: rgb(0, 0, 0);
+    }
+    
+    .SubmissionForm p {
+        color: #333;
+        font-size: 60px;
+    }
+    
+    input,
+    textarea {
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    
+    /* Spacer Section */
+    .spacer {
+        margin-bottom: 20px;
+        margin-top: 30px;
+        text-shadow: #333;
+    }
+    
+    .spacer h1,
+    .spacer h3 {
+        color: #333;
+    }
+    
+    .spacer p,
+    .additional-text p {
+        font-family: monospace;
+        font-weight: bold;
+    }
+    
+    /* Box-2 Section */
+    .box-2 {
+        padding: 20px;
+        display: flex;
+        flex-direction: column; /* Set to column for all screens */
+        align-items: center;
+        background-color: #ffffff;
+        max-width: 95%;
+        margin: auto;
+        height: auto; /* Set height to auto for responsiveness */
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .image {
+        margin-bottom: 20px; /* Add margin at the bottom for better spacing */
+        height: auto;
+        max-width: 90%; /* Ensure the image is responsive */
+    }
+    
+    .text-2 h1 {
+        color: #217dbb;
+        margin-bottom: 10px;
+        text-align: center; /* Center the text for all screens */
+        font-size: 1.5em; /* Adjust the font size */
+    }
+    
+    .text-2 p {
+        color: #333;
+        text-align: center; /* Center the text for all screens */
+        font-size: 1em; /* Adjust the font size */
+    }
+    
+    /* Responsive Media Queries */
+    @media only screen and (min-width: 600px) {
+        .box-2 {
+            padding: 20px;
+            display: flex;
+            flex-direction: row; /* Set to row layout for all screens */
+            align-items: center;
+            background-color: #ffffff;
+            max-width: 95%;
+            margin: auto;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .image {
+            margin-bottom: 0; /* Reset margin for larger screens */
+            margin-right: 20px; /* Add margin to the right for spacing between image and text */
+            height: 200px;
+            max-width: none; /* Reset max-width for larger screens */
+        }
+        
+        .text-2 {
+            text-align: left; /* Align text to the left for all screens */
+        }
+        
+        .text-2 h1 {
+            font-size: 2em; /* Adjust the font size for all screens */
+            text-align: left; /* Align heading to the left for all screens */
+        }
+        
+        .text-2 p {
+            font-size: 1.2em; /* Adjust the font size for all screens */
+            text-align: left; /* Align paragraphs to the left for all screens */
+        }
+        .text-overlay-2 {
+            width: 90%;
+        }
+    
+        .content-container-2 {
+            text-align: left;
+        }
+    
+    }
+    
+    
+    
 
 </style>
 
@@ -370,10 +445,11 @@ textarea {
     <!------------------HEADER---------------------->
     <header>
         <nav>
+
             <div class="nav-links" id="navLinks">
                 <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href="HS.html">HOME</a></li>
+                    <li><a href="imdex.html">HOME</a></li>
                     <li><a href="process.html">CONTACT</a></li>
                   </ul>
             </div>
@@ -412,10 +488,29 @@ textarea {
                 <p>Host families act as a supportive "family," easing feelings of isolation. A comfortable environment is vital for student confidence and growth.</p>
                 <h1>Cross-Cultural Understanding</h1>
                 <p>Through the host family, students develop skills in understanding and accepting different backgrounds and values. This fosters cross-cultural understanding, contributing to a broader international perspective.</p>
-            
+        
             </div>
         </div>
     </div>
+    </section>
+
+    
+    <section class="requirement">
+        <div class="box-container-2">
+            <div class="image-container-2">
+            <img src="blank-list-planner-with-checklist-black-pen-white-background-close-up_211682-100.avif" alt="Image Description">
+            <div class="text-overlay-2">
+                <h1>You can become a host family if you fulfill several requirements</h1>
+                </div>
+            </div>
+        
+            <div class="content-container-2"></div>
+            <p>□ ACCOMMODATION</p>
+            <p>□ MEALS</p>
+            <p>□ LANGUAGE</p>
+        </div>
+    </div>
+</div>
     </section>
  
    
@@ -475,6 +570,7 @@ textarea {
             <h1>STEP3: Home visit</h1>
           <p>We will visit the home and look at the entire house, including the living room, dining room, private room, bath room and landry.</p>
         </div>
+        
       </div>
 
 
